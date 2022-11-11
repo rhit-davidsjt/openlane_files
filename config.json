@@ -1,0 +1,40 @@
+{
+    "DESIGN_NAME": "adder32b",
+    "VERILOG_FILES": "dir::src/*.v",
+    "CLOCK_PERIOD": 10,
+    "CLOCK_PORT": "clk",
+    "CLOCK_NET": "ref::$CLOCK_PORT",
+    "DESIGN_IS_CORE": false,
+    "FP_PDN_VOFFSET": 7,
+    "FP_PDN_HOFFSET": 7,
+    "FP_PIN_ORDER_CFG": "dir::pin_order.cfg",
+    "FP_PDN_SKIPTRIM": true,
+    "FP_CORE_UTIL": 30,
+    "CELL_PAD": 2,
+    "DIODE_PADDING": 4,
+    "PL_BASIC_PLACEMENT": 0,
+    "PL_TARGET_DENSITY": 0,
+    "PL_OPTIMIZE_MIRRORING": 0,
+    "PL_MAX_DISPLACEMENT_X": 2000,
+    "PL_MAX_DISPLACEMENT_Y": 2000,
+    "DIODE_INSERTION_STRATEGY": 3,
+    "pdk::sky130*": {
+        "FP_CORE_UTIL": 45,
+        "scl::sky130_fd_sc_hd": {
+            "CLOCK_PERIOD": 10
+        },
+        "scl::sky130_fd_sc_hdll": {
+            "CLOCK_PERIOD": 10
+        },
+        "scl::sky130_fd_sc_hs": {
+            "CLOCK_PERIOD": 8
+        },
+        "scl::sky130_fd_sc_ls": {
+            "CLOCK_PERIOD": 10,
+            "SYNTH_MAX_FANOUT": 5
+        },
+        "scl::sky130_fd_sc_ms": {
+            "CLOCK_PERIOD": 10
+        }
+    }
+}
